@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>HTML Starter</title>
-    <base href="./">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/css/main.min.css" type="text/css">
-    <link href="favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <nav>
-        <ul>
-          <li id="trackX"></li>
-          <li id="trackY"></li>
-          <li><button id="btnRect">Rectangle</button></li>
-          <li><button id="btnLine">Line</button></li>
-
-        </ul>
-      </nav>
-      <main></main>
-    </div>
-    <script src="dist/js/main.js"></script>
-  </body>
+    <head>
+       <meta charset="UTF-8">
+       <title>Draw</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+       <link rel="stylesheet" href="dist/css/main.min.css">
+    </head>
+    <body>
+      <div class="wrapper">
+        <nav>
+          <ul>
+            <li><span id="trackX"></span></li>
+            <li><span id="trackY"></span></li>
+            <li><button id="btnRect">Rectangle</button></li>
+            <li><button id="btnLine">Line</button></li>
+            <li><button id="btnCircle">Circle</button></li>
+            <li><button id="btnPath">Path</button></li>
+            <li><button id="btnTriangle">Triangle</button></li>
+            <li><button id="btnFlower">Flower</button></li>
+            <li>Select your fill color: <input type="color" id="favFillStyle" value="#000000">
+              <input type="checkbox" id="checkFillStyle" >
+            </li>
+            <li>Select your stroke color: <input type="color" id="favStrokeStyle" value="#000000">
+              <input type="checkbox" id="checkStrokeStyle">
+            </li>
+          </ul>
+        </nav>
+        <main></main>
+      </div>
+      <script src="dist/js/main.js"></script>
+    </body>
 </html>
